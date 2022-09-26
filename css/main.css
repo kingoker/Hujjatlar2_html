@@ -57,6 +57,9 @@
     display: flex;
 }
 .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: -1;
     height: 100vh;
     min-width: 300px;
@@ -65,4 +68,9 @@
 }
 .sidebar__container, .main__container{
     padding-top: 90px;
+}
+
+/*  */
+.main{
+    margin-left: 300px;
 }

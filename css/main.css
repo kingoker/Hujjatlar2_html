@@ -1,0 +1,68 @@
+
+
+/* Стили тегов */
+*{
+    font-family: 'Roboto';
+}
+
+
+/* Основные Стили */
+.container{
+    padding: 5px 30px;
+}
+
+
+/* Шапка */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #208ED8;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header__logo{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo__text{
+    color: white;
+    text-decoration: none;
+}
+.header__tools{
+    display: flex;
+    gap: 30px;
+}
+.tools__link{
+    font-size: 24px;
+    color: white;
+}
+.tools__link:hover{
+    color: #5CCAFF;
+}
+
+
+/* Сайтбар */
+.sedebarMain__container{
+    display: flex;
+}
+.sidebar{
+    z-index: -1;
+    height: 100vh;
+    min-width: 300px;
+    background-color: #fafafa;
+    box-shadow: inset 0px 6px 5px #d1d1d1;
+}
+.sidebar__container, .main__container{
+    padding-top: 90px;
+}

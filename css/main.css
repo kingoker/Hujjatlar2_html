@@ -110,12 +110,15 @@
     gap: 20px;
     margin-bottom: 50px;
 }
+.folder__item{
+    position: relative;
+}
 .folder__link{
     padding: 15px;
     box-shadow: 0px 0px 0px #fafafa;
     border: 1px solid #e2e2e2;
     border-radius: 5px;
-    width: 295px;
+    width: 333px;
     color: rgb(60,64,67);
     display: flex;
     gap: 10px;
@@ -138,6 +141,18 @@
 }
 .excel__icon{
     color: #26A639;
+}
+.folder__delete{
+    color: #e2e2e2;
+    position: absolute;
+    transform:translate(-50%, -50%);
+    top:50%;
+    right: 0px;
+    font-size: 18px;
+    z-index: 1;
+}
+.folder__delete:hover{
+    color: #D90718;
 }
 
 

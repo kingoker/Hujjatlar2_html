@@ -27,36 +27,6 @@
                 <a href="#upload__file" class="tools__link popup-link">
                     <i class="bi bi-cloud-arrow-up-fill"></i>
                 </a>
-                <!-- Модальные окна -->
-                <div id="popup__folder" class="popup-create-folder popup">
-                    <div class="popup-create-folder__body popup__body">
-                        <div class="popup-create-folder__content popup__content">
-                            <a href="#">
-                                <div class="popup_close close__popup"></div>
-                            </a>
-                            <div class="popup__title">Создать папку</div>
-                            <form method="POST" class="form popup__form">
-                                <input type="text" class="popup__input" placeholder="Название папки" required>
-                                <button class="popup__button button">Создать папку</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="upload__file" class="popup-upload-file popup">
-                    <div class="popup-create-folder__body popup__body">
-                        <div class="popup-create-folder__content popup__content">
-                            <a href="#">
-                                <div class="popup_close close__popup"></div>
-                            </a>
-                            <div class="popup__title">Загрузить документ</div>
-                            <form method="POST"  class="form popup__form" enctype="multipart/form-data">
-                                <input type="file" class="popup__input" placeholder="Название папки" required>
-                                <button type="submit" class="popup__button button">Загрузить</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
 
 
@@ -72,18 +42,31 @@
     <div class="sedebarMain__container">
         <section class="sidebar">
             <div class="sidebar__container container">
-                <div class="sidebar__list">
-                    <a href="#" class="sidebar__item sidebar__item-active">
+                <div class="sidebar__list"  id="menu-act">
+                    <a href="index.html" class="sidebar__item sidebar__item-active">
                         <i class="bi bi-folder-fill"></i>
                         Hujjatlar
                     </a>
-                    <a href="videoCourses.html" class="sidebar__item">
+                    <details class="sidebar__details">
+                        <summary class="sidebar__item">
+                            <i class="bi bi-bar-chart-line-fill"></i>
+                            Показатели отделов
+                            <i class="bi bi-caret-down-fill"></i>
+                        </summary>
+                        <a href="finance.html" class="sidebar__item_element">Финансы</a>
+                        <a href="export.html" class="sidebar__item_element">Экспорт</a>
+                    </details>
+                    <a href="creating.html" class="sidebar__item">
                         <i class="bi bi-mortarboard-fill"></i>
                         Видео уроки
                     </a>
                     <a href="creating.html" class="sidebar__item">
                         <i class="bi bi-check-square-fill"></i>
                         ToDo List
+                    </a>
+                    <a href="creating.html" class="sidebar__item">
+                        <i class="bi bi-telegram"></i>
+                        Чат
                     </a>
                 </div>
             </div>
@@ -126,7 +109,7 @@
                 </div>
 
                 <h2 class="main__subtitle">
-                    файы
+                    файлы
                 </h2>
                 <div class="folder__list">
                     <div class="folder__item">
@@ -206,6 +189,39 @@
         </section>
     </div>
 
+
+
+
+    <!-- Модальные окна -->
+    <div id="popup__folder" class="popup-create-folder popup">
+        <div class="popup-create-folder__body popup__body">
+            <div class="popup-create-folder__content popup__content">
+                <a href="#">
+                    <div class="popup_close close__popup"></div>
+                </a>
+                <div class="popup__title">Создать папку</div>
+                <form method="POST" class="form popup__form">
+                    <input type="text" class="popup__input" placeholder="Название папки" required>
+                    <button class="popup__button button">Создать папку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="upload__file" class="popup-upload-file popup">
+        <div class="popup-create-folder__body popup__body">
+            <div class="popup-create-folder__content popup__content">
+                <a href="#">
+                    <div class="popup_close close__popup"></div>
+                </a>
+                <div class="popup__title">Загрузить документ</div>
+                <form method="POST"  class="form popup__form" enctype="multipart/form-data">
+                    <input type="file" class="popup__input" placeholder="Название папки" required>
+                    <button type="submit" class="popup__button button">Загрузить</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="js/jcript.js"></script>
 </body>
 </html>

@@ -1,3 +1,12 @@
+// Выделение активного пункта меню
+
+
+
+
+
+
+
+
 // Модальные окна
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');

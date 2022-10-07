@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="wrapper">
+<body>
     <header class="header">
         <div class="header__container container">
             <div class="header__logo logo">
                 <a class="logo__text" href="/">Hujjatlar 2</a>
             </div>
-
+            
             <div class="header__profile">
                 <a href="login.html" class="tools__link">
                     <i class="bi bi-person-circle"></i>
@@ -62,24 +62,12 @@
         </section>
     
         <section class="main">
-            <div class="courses__container container">
-                <h2 class="courses__header header__title">Видео курсы</h2>
-                <div class="courses__list">
-                    <div class="courses__item">
-                        <img src="img/Course photo.jpg" alt="course name" class="courses__image img">
-                        <p class="courses__title">Название курса</p>
-                        <div class="courses__views">Просмотров: 269 000</div>
-                    </div>
-                    <div class="courses__item">
-                        <img src="img/test.jpg" alt="course name" class="courses__image img">
-                        <p class="courses__title">Название курса</p>
-                        <div class="courses__views">Просмотров: 269 000</div>
-                    </div>
-                </div>
-            </div>
+            
         </section>
     </div>
-
-    <script src="js/jcript.js"></script>
+    <script>
+        let text = document.querySelector('.loader__text p');
+        text.innerHTML = text.innerText.split("").map((char, i) => `<b style="transform:rotate(${i * 15}deg)">${char}</b>`).join("");
+    </script>
 </body>
 </html>

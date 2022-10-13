@@ -31,7 +31,7 @@
 
 
             <div class="header__profile">
-                <a href="login.html" class="tools__link">
+                <a href="#login" class="tools__link popup-link">
                     <i class="bi bi-person-circle"></i>
                 </a>
             </div>
@@ -223,6 +223,23 @@
             </div>
         </div>
     </div>
+
+    <div id="login" class="popup-create-folder popup">
+        <div class="popup-create-folder__body popup__body">
+            <div class="popup-create-folder__content popup__content">
+                <a href="#">
+                    <div class="popup_close close__popup"></div>
+                </a>
+                <div class="popup__title">Авторизация</div>
+                <form method="POST" class="form popup__form">
+                    <input type="text" class="popup__input" placeholder="Логин" required>
+                    <input type="password" class="popup__input" placeholder="Пароль" required>
+                    <button class="popup__button button">Авторизоваться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
     <script src="js/jcript.js"></script>
 </body>
 </html>

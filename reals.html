@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hujjatlar2</title>
+    <title>Hujjatlar2 | Reals</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -60,18 +60,19 @@
                 </div>
             </div>
         </section>
-    
-        <section class="main main__creating">
-            <div class="creating__container container">
-                <div class="loader">
-                    <div class="loader__text">
-                        <p>Страница в разработке</p>
+
+        <section class="main">
+            <div class="reals__container container">
+                <div class="reals__list">
+                    <div class="reals__item">
+                        <iframe src="https://www.youtube.com/embed/qol92T32mhk" title="YouTube video player" frameborder="0" controls:0 allowfullscreen></iframe>
+                        <div class="reals__title">Первое видео</div>
                     </div>
-                    <span><i></i></span>
                 </div>
             </div>
         </section>
     </div>
+
     <script>
         let text = document.querySelector('.loader__text p');
         text.innerHTML = text.innerText.split("").map((char, i) => `<b style="transform:rotate(${i * 15}deg)">${char}</b>`).join("");

@@ -6,7 +6,7 @@
 
 /* Основные Стили */
 .container{
-    padding: 5px 30px;
+    margin: 30px;
 }
 img{
     width: 100%;
@@ -98,9 +98,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     background-color: #fafafa;
     box-shadow: inset 0px 6px 5px #d1d1d1;
 }
-.sidebar__container, .main__container{
-    padding-top: 30px;
-}
+
 .sidebar__list{
     display: flex;
     flex-direction: column;
@@ -220,9 +218,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 
 /* Видео курсы */
-.courses__container{
-    padding-top: 30px;
-}
 .courses__list{
     display: flex;
     gap: 30px;
@@ -237,9 +232,30 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 .courses__image{
     width: 300px;
-    height: 300px;
+    height: 200px;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0px 6px 5px #C4C4C6;
+    transition: all 0.3s ease;
+}
+.courses__image:hover{
+    box-shadow: 0px 0px 15px rgb(139, 139, 139);
+}
+.courses__type{
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C4C4C6;
+}
+.courses__title{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #2A2A2C;
+}
+.courses__title:hover{
+    color: #208ED8;
 }
 
 
@@ -254,7 +270,17 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 
-
+/* Страница Reals */
+.reals__item iframe{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.reals__title{
+    font-size: 16px;
+    color: #2A2A2C;
+}
 
 
 
@@ -358,7 +384,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 
-
 /* страница в разработке */
 .main__creating{
     width: 100%;
@@ -370,6 +395,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     justify-content: center;
     align-items: center;
     background-color: #eaeef0;
+    margin: 0px;
+    padding: 30px;
 }
 .loader{
     position: relative;

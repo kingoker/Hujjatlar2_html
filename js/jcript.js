@@ -1,5 +1,8 @@
-// Выделение активного пункта меню
-
+// Страница в разработке
+let text = document.querySelector('.loader__text p');
+if (text){
+    text.innerHTML = text.innerText.split("").map((char, i) => `<b style="transform:rotate(${i * 15}deg)">${char}</b>`).join("");   
+}
 
 
 

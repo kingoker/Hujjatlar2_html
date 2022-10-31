@@ -12,18 +12,30 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="wrapper">
     <header class="header">
         <div class="header__container container">
             <div class="header__logo logo">
                 <a class="logo__text" href="/">Hujjatlar 2</a>
             </div>
-            
+
+
+            <div class="header__tools tools">
+                <a href="#popup__folder" class="tools__link popup-link">
+                    <i class="bi bi-folder-fill"></i>
+                </a>
+                <a href="#upload__file" class="tools__link popup-link">
+                    <i class="bi bi-cloud-arrow-up-fill"></i>
+                </a>
+            </div>
+
+
             <div class="header__profile">
-                <a href="login.html" class="tools__link">
+                <a href="#login" class="tools__link popup-link">
                     <i class="bi bi-person-circle"></i>
                 </a>
             </div>
+            
         </div>
     </header>
 
@@ -65,7 +77,7 @@
             <div class="reals__container container">
                 <div class="reals__list">
                     <div class="reals__item">
-                        <iframe src="https://www.youtube.com/embed/qol92T32mhk" title="YouTube video player" frameborder="0" controls:0 allowfullscreen></iframe>
+                        <iframe src="https://www.youtube-nocookie.com/embed/K2tMCWXeLgU?controls=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <div class="reals__title">Первое видео</div>
                     </div>
                 </div>
@@ -73,9 +85,54 @@
         </section>
     </div>
 
-    <script>
-        let text = document.querySelector('.loader__text p');
-        text.innerHTML = text.innerText.split("").map((char, i) => `<b style="transform:rotate(${i * 15}deg)">${char}</b>`).join("");
-    </script>
+
+    <!-- Модальные окна -->
+    <div id="popup__folder" class="popup-create-folder popup">
+        <div class="popup-create-folder__body popup__body">
+            <div class="popup-create-folder__content popup__content">
+                <a href="#">
+                    <div class="popup_close close__popup"></div>
+                </a>
+                <div class="popup__title">Создать папку</div>
+                <form method="POST" class="form popup__form">
+                    <input type="text" class="popup__input" placeholder="Название папки" required>
+                    <button class="popup__button button">Создать папку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="upload__file" class="popup-upload-file popup">
+        <div class="popup-create-folder__body popup__body">
+            <div class="popup-create-folder__content popup__content">
+                <a href="#">
+                    <div class="popup_close close__popup"></div>
+                </a>
+                <div class="popup__title">Загрузить документ</div>
+                <form method="POST"  class="form popup__form" enctype="multipart/form-data">
+                    <input type="file" class="popup__input" placeholder="Название папки" required>
+                    <button type="submit" class="popup__button button">Загрузить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="login" class="popup-create-folder popup">
+        <div class="popup-create-folder__body popup__body">
+            <div class="popup-create-folder__content popup__content">
+                <a href="#">
+                    <div class="popup_close close__popup"></div>
+                </a>
+                <div class="popup__title">Авторизация</div>
+                <form method="POST" class="form popup__form">
+                    <input type="text" class="popup__input" placeholder="Логин" required>
+                    <input type="password" class="popup__input" placeholder="Пароль" required>
+                    <button class="popup__button button">Авторизоваться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jcript.js"></script>
 </body>
 </html>
